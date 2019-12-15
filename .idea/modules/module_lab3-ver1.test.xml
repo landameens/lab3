@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_lab3-ver1.test" default="compile.module.lab3-ver1.test">
+  <dirname property="module.lab3-ver1.test.basedir" file="${ant.file.module_lab3-ver1.test}"/>
+  
+  <property name="module.jdk.home.lab3-ver1.test" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.lab3-ver1.test" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.lab3-ver1.test" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.lab3-ver1.test" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="lab3-ver1.test.output.dir" value="undefined"/>
+  <property name="lab3-ver1.test.testoutput.dir" value="${module.lab3-ver1.test.basedir}/../../build/classes/java/test"/>
+  
+  <path id="lab3-ver1.test.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="lab3-ver1.test.module.production.classpath">
+    <path refid="${module.jdk.classpath.lab3-ver1.test}"/>
+    <pathelement location="${lab3-ver1.main.output.dir}"/>
+  </path>
+  
+  <path id="lab3-ver1.test.runtime.production.module.classpath">
+    <path refid="lab3-ver1.main.runtime.production.module.classpath"/>
+  </path>
+  
+  <path id="lab3-ver1.test.module.classpath">
+    <path refid="${module.jdk.classpath.lab3-ver1.test}"/>
+    <pathelement location="${lab3-ver1.main.output.dir}"/>
+  </path>
+  
+  <path id="lab3-ver1.test.runtime.module.classpath">
+    <pathelement location="${lab3-ver1.test.testoutput.dir}"/>
+    <path refid="lab3-ver1.main.runtime.module.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.lab3-ver1.test">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.lab3-ver1.test">
+    <patternset refid="excluded.from.module.lab3-ver1.test"/>
+  </patternset>
+  
+  <path id="lab3-ver1.test.module.test.sourcepath">
+    <dirset dir="${module.lab3-ver1.test.basedir}/../../src/test">
+      <include name="java"/>
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.lab3-ver1.test" depends="compile.module.lab3-ver1.test.production,compile.module.lab3-ver1.test.tests" description="Compile module lab3-ver1.test"/>
+  
+  <target name="compile.module.lab3-ver1.test.production" depends="register.custom.compilers,compile.module.lab3-ver1.main" description="Compile module lab3-ver1.test; production classes"/>
+  
+  <target name="compile.module.lab3-ver1.test.tests" depends="register.custom.compilers,compile.module.lab3-ver1.test.production" description="compile module lab3-ver1.test; test classes" unless="skip.tests">
+    <mkdir dir="${lab3-ver1.test.testoutput.dir}"/>
+    <javac2 destdir="${lab3-ver1.test.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.lab3-ver1.test}/javac">
+      <compilerarg line="${compiler.args.lab3-ver1.test}"/>
+      <bootclasspath refid="lab3-ver1.test.module.bootclasspath"/>
+      <classpath refid="lab3-ver1.test.module.classpath"/>
+      <src refid="lab3-ver1.test.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.lab3-ver1.test"/>
+    </javac2>
+    
+    <copy todir="${lab3-ver1.test.testoutput.dir}">
+      <fileset dir="${module.lab3-ver1.test.basedir}/../../src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.lab3-ver1.test.basedir}/../../src/test/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.lab3-ver1.test" description="cleanup module">
+    <delete dir="${lab3-ver1.test.output.dir}"/>
+    <delete dir="${lab3-ver1.test.testoutput.dir}"/>
+  </target>
+</project>
