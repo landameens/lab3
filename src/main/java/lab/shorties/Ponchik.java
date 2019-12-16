@@ -3,8 +3,6 @@ package lab.shorties;
 import java.util.List;
 
 import lab.activity.*;
-import lab.things.Salt;
-import lab.things.Thing;
 import lab.things.Thing1;
 
 import java.util.ArrayList;
@@ -33,22 +31,24 @@ public class Ponchik extends Shorty {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
+    public boolean equals(Object object) {
+        if (object == null) {
             return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Ponchik other = (Ponchik) obj;
-
-        if (activities == null) {
-            if (other.activities != null)
-                return false;
         }
-        else if (!activities.equals(other.activities))
+
+        if (this == object) {
+            return true;
+        }
+
+        if (!(object instanceof Ponchik)) {
             return false;
-        return true;
+        }
+
+//        if (this.name.equals(((Ponchik) object).name)) {
+//            return true;
+//        }
+
+        return false;
     }
 
     @Override

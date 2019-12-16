@@ -1,6 +1,6 @@
 package lab.things;
 
-public class AllThing implements Thing {
+public class OtherThing implements Thing {
     public static final String NAME = " все что попадается в руки";
 
     @Override

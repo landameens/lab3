@@ -8,6 +8,7 @@ public class Lab3 {
 
     public static void main(String[] args) {
 
+        Ponchik ponchik = new Ponchik("Пончик");
 
 //        Drag drag = new Drag();
 //        Coast coast = new Coast();
@@ -21,7 +22,7 @@ public class Lab3 {
 //        Salt.Describe View = salt.new Describe();
 //        Sea sea = new Sea();
 //        City city = new City("Лос-Паганос");
-//        Ponchik ponchik = new Ponchik("Пончик");
+//
 //        Dives dives = new Dives("Богачи");
 //        Street street = new Street();
 //        Street.Description StreetDescription = street.new Description();

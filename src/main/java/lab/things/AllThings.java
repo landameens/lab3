@@ -1,5 +1,5 @@
 package lab.things;
 
-public class allThings {
+public class AllThings {
     private String name = "City";
 }
