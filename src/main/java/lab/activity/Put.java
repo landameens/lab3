@@ -12,7 +12,7 @@ public class Put extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Put";
     }
 }

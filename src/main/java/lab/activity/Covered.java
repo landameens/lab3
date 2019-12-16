@@ -12,7 +12,7 @@ public class Covered extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Covered";
     }
 }

@@ -30,11 +30,10 @@ public class Coast implements Thing {
     }
 
     public String doActivity(String activityName, Thing thing) {
-        for (Activity activity : activities) {
-            if (activity.getName().equals(activityName)) {
-                return activity.execute(thing);
-            }
+        if (Activity.getName().equals(activityName)) {
+            return activity.execute(thing);
         }
+        for (Activity activity : activities)
         return null;
     }
 

@@ -12,7 +12,7 @@ public class Pound extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Pound";
     }
 }

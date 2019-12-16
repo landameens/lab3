@@ -12,7 +12,7 @@ public class Ensure extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Ensure";
     }
 }

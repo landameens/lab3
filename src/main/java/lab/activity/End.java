@@ -12,7 +12,7 @@ public class End extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "End";
     }
 }

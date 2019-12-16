@@ -18,5 +18,5 @@ public abstract class Activity {
     }
 
     protected abstract String createMainPart();
-    protected abstract String getActivityName();
+    public abstract String getActivityName();
 }

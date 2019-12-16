@@ -12,7 +12,7 @@ public class Start extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Start";
     }
 }

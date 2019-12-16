@@ -12,23 +12,22 @@ public class Ponchik extends Shorty {
 
     public Ponchik(String name) {
         super(name);
-        activities = new ArrayList<>();
-        activities.add(new Pound());
-        activities.add(new Fill());
-        activities.add(new PutOn());
-        activities.add(new See());
-        activities.add(new Parashute());
-        activities.add(new Go());
-        activities.add(new Part());
-        activities.add(new Check());
-        activities.add(new Lick());
-        activities.add(new Ensure());
-        activities.add(new Chose());
-        activities.add(new Put());
-        activities.add(new Start());
-        activities.add(new End());
-        //activities.add(new );
+        addActivity(new Pound(()));
+        addActivity(new Fill());
+        addActivity(new PutOn());
+        addActivity(new See());
+        addActivity(new Parashute());
+        addActivity(new Go());
+        addActivity(new Part());
+        addActivity(new Check());
+        addActivity(new Lick());
+        addActivity(new Ensure());
+        addActivity(new Chose());
+        addActivity(new Put());
+        addActivity(new Start());
+        addActivity(new End());
     }
+
 
     @Override
     public boolean equals(Object object) {
@@ -50,11 +49,5 @@ public class Ponchik extends Shorty {
 
         return false;
     }
-
-    @Override
-    public String toString() {
-        return "Ponchik [activities=" + activities + "]";
-    }
-
 
 }

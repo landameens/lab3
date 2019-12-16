@@ -12,7 +12,7 @@ public class Lick extends Activity {
     }
 
     @Override
-    protected String getActivityName() {
+    public String getActivityName() {
         return "Lick";
     }
 }
