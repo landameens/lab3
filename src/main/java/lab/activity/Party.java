@@ -2,8 +2,9 @@ package lab.activity;
 
 public class Party extends Activity {
     public Party(String objectName, String characteristic){
-        this.objectName=objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+        //this.objectName=objectName;
+      //  this.characteristic=characteristic;
     }
 
     public Party() {

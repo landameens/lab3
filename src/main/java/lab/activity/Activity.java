@@ -1,22 +1,30 @@
 package lab.activity;
 
 public abstract class Activity {
-    protected String objectName;
-    protected String activityName;
-    protected String characteristic;
+    private String objectName;
+    private String activityName;
+    private String characteristic;
 
+   public Activity(String objectName, String characteristic) {
+       this.objectName = objectName;
+       this.characteristic = characteristic;
+   }
+
+   public Activity() {}
 
     //template method
     public String execute() {
-        String result = "";
-
-        result += characteristic;
-        result += objectName;
-        result += createMainPart();
-
-        return result;
+        return getCharacteristic() + " " + getObjectName() + " " + createMainPart();
     }
 
     protected abstract String createMainPart();
     public abstract String getActivityName();
+
+    public String getCharacteristic() {
+        return characteristic;
+    }
+
+    public String getObjectName() {
+        return objectName;
+    }
 }

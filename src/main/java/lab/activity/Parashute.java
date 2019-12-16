@@ -2,8 +2,9 @@ package lab.activity;
 
 public class Parashute extends Activity {
     public Parashute(String objectName, String characteristic){
-        this.objectName=objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+        //this.objectName=objectName;
+     //   this.characteristic=characteristic;
     }
 
     public Parashute() {

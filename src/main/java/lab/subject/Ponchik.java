@@ -1,10 +1,6 @@
-package lab.shorties;
-
-import java.util.List;
+package lab.subject;
 
 import lab.activity.*;
-import lab.things.Salt;
-import lab.things.thingss1.Thing1;
 
 public class Ponchik extends Subject {
 

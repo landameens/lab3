@@ -2,8 +2,9 @@ package lab.activity;
 
 public class PutOn extends Activity {
     public PutOn(String objectName, String characteristic){
-        this.objectName=objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+        //this.objectName=objectName;
+       // this.characteristic=characteristic;
     }
 
     public PutOn() {

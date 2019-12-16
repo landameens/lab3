@@ -1,4 +1,4 @@
-package lab.shorties;
+package lab.subject;
 
 import lab.things.NotLiveSubject;
 

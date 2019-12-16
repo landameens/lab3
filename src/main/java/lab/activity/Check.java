@@ -2,8 +2,9 @@ package lab.activity;
 
 public class Check extends Activity {
     public Check(String objectName, String characteristic){
-        this.objectName =objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+        //this.objectName =objectName;
+        //this.characteristic=characteristic;
     }
 
     public Check() {

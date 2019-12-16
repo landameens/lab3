@@ -1,8 +1,7 @@
 package lab;
 
 import lab.activity.*;
-import lab.shorties.*;
-import lab.things.*;
+import lab.subject.*;
 import lab.things.thingss1.Thing1;
 
 public class Lab3 {
@@ -16,13 +15,19 @@ public class Lab3 {
         Thing1 parashut = new Thing1("парашют ","");
         Thing1 allThing = new Thing1("то ", "что попадается в руки ");
         Thing1 pocket = new Thing1("карманы ", "курточки ");
+        Thing1 hill = new Thing1("холмами ", "поросшими зеленой травкой и мелким кустарником ");
         Ponchik ponchik = new Ponchik("Пончик");
-        Coast coast = new Coast();
+        Covered covered = new Covered(stone.getNAME(), "");
         City city = new City("Лос-Паганос");
+
         Drag drag = new Drag(sea.getNAME(), "полосой вдоль");
+        Limited limited = new Limited(hill.getNAME(), "с противополложной стороны ");
+
+        Coast coast = new Coast(drag, limited, covered);
 
 
         System.out.println(coast.doActivity(drag.getActivityName()));
+        //System.out.println(coast.doActivity(covered.getActivityName()));
         //System.out.println(ponchik.doActivity(new Check(stone.getNAME(), "внимательно")));
         //System.out.println(ponchik.doActivity("Pound"));
 

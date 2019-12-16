@@ -1,11 +1,6 @@
-package lab.shorties;
+package lab.subject;
 
 import lab.activity.Drag;
-import lab.things.Describing;
-import lab.things.Thing;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Street extends Subject {
     private String name = " улица ";
@@ -20,8 +15,8 @@ public class Street extends Subject {
 //        }
 //    }
 
-    public Street() {
-        addActivity(new Drag());
+    public Street(Drag drag) {
+        addActivity(drag);
     }
 
 }

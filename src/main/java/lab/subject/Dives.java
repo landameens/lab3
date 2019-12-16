@@ -1,10 +1,7 @@
-package lab.shorties;
+package lab.subject;
 
 import lab.activity.Come;
 import lab.activity.Party;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Dives extends Subject {
 

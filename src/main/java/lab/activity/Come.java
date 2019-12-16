@@ -2,8 +2,9 @@ package lab.activity;
 
 public class Come extends Activity {
     public Come(String objectName, String characteristic){
-        this.objectName =objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+      //  this.objectName =objectName;
+       // this.characteristic=characteristic;
     }
 
     public Come() {

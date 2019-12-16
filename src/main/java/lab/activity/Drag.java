@@ -1,14 +1,13 @@
 package lab.activity;
 
 public class Drag extends Activity {
+
     public Drag(String objectName, String characteristic){
-        this.objectName =objectName;
-        this.characteristic=characteristic;
+        super(objectName,characteristic);
+       // this.objectName = objectName;
+        //this.characteristic=characteristic;
     }
 
-    public Drag() {
-
-    }
 
     @Override
     protected String createMainPart() {
@@ -19,4 +18,5 @@ public class Drag extends Activity {
     public String getActivityName() {
         return "Drag";
     }
+
 }
