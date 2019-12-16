@@ -3,9 +3,10 @@ package lab.shorties;
 import java.util.List;
 
 import lab.activity.*;
+import lab.things.Salt;
+import lab.things.thingss1.Thing1;
 
-public class Ponchik extends Shorty {
-    private List activities;
+public class Ponchik extends Subject {
 
     public Ponchik(String name) {
         super(name);

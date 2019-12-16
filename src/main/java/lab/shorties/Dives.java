@@ -6,7 +6,7 @@ import lab.activity.Party;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dives extends Shorty {
+public class Dives extends Subject {
 
     public Dives(String name) {
         super(name);

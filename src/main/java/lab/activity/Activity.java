@@ -10,9 +10,9 @@ public abstract class Activity {
     public String execute() {
         String result = "";
 
+        result += characteristic;
         result += objectName;
         result += createMainPart();
-        result += characteristic;
 
         return result;
     }
