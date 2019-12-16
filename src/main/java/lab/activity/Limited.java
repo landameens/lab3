@@ -6,6 +6,10 @@ public class Limited extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Limited() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "ограничен ";

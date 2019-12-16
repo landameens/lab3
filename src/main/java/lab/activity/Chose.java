@@ -6,6 +6,10 @@ public class Chose extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Chose() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "выбрал";

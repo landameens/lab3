@@ -6,6 +6,10 @@ public class Come extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Come() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "съезжались ";

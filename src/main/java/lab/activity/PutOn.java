@@ -6,6 +6,10 @@ public class PutOn extends Activity {
         this.characteristic=characteristic;
     }
 
+    public PutOn() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "оделся ";

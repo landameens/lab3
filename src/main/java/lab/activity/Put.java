@@ -6,6 +6,10 @@ public class Put extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Put() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "положил ";

@@ -6,6 +6,10 @@ public class End extends Activity {
         this.characteristic=characteristic;
     }
 
+    public End() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "получилась ";

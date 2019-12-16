@@ -6,6 +6,10 @@ public class Go extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Go() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "зашагал ";

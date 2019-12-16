@@ -6,6 +6,10 @@ public class See extends Activity {
         this.characteristic=characteristic;
     }
 
+    public See() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "видел ";

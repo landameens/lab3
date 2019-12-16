@@ -6,6 +6,10 @@ public class Ensure extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Ensure() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "убедился ";

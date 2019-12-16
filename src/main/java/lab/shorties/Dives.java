@@ -1,5 +1,8 @@
 package lab.shorties;
 
+import lab.activity.Come;
+import lab.activity.Party;
+
 import java.util.ArrayList;
 import java.util.List;
 

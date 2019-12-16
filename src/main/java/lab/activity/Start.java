@@ -6,6 +6,10 @@ public class Start extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Start() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "принялся ";

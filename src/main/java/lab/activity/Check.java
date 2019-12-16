@@ -6,6 +6,9 @@ public class Check extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Check() {
+    }
+
     @Override
     protected String createMainPart() {
         return "убедился";

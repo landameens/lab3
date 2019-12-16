@@ -6,6 +6,10 @@ public class Party extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Party() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "повеселиться ";

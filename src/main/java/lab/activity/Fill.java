@@ -6,6 +6,10 @@ public class Fill extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Fill() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "набил ";

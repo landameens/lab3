@@ -6,6 +6,10 @@ public class Lick extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Lick() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "полизав ";

@@ -6,6 +6,10 @@ public class Drag extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Drag() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "тянулся ";

@@ -6,6 +6,9 @@ public class Pound extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Pound() {
+    }
+
     @Override
     protected String createMainPart() {
         return "толочь ";

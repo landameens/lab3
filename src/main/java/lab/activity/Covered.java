@@ -6,6 +6,10 @@ public class Covered extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Covered() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "покрыт ";

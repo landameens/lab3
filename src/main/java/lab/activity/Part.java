@@ -6,6 +6,10 @@ public class Part extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Part() {
+
+    }
+
     @Override
     protected String createMainPart() {
         return "не привык расставаться ";

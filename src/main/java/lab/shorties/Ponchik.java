@@ -3,16 +3,13 @@ package lab.shorties;
 import java.util.List;
 
 import lab.activity.*;
-import lab.things.Thing1;
-
-import java.util.ArrayList;
 
 public class Ponchik extends Shorty {
     private List activities;
 
     public Ponchik(String name) {
         super(name);
-        addActivity(new Pound(()));
+        addActivity(new Pound());
         addActivity(new Fill());
         addActivity(new PutOn());
         addActivity(new See());

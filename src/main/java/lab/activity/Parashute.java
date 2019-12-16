@@ -6,6 +6,9 @@ public class Parashute extends Activity {
         this.characteristic=characteristic;
     }
 
+    public Parashute() {
+    }
+
     @Override
     protected String createMainPart() {
         return "спускался ";
