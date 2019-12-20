@@ -3,8 +3,6 @@ package lab.activity;
 public class Check extends Activity {
     public Check(String objectName, String characteristic){
         super(objectName,characteristic);
-        //this.objectName =objectName;
-        //this.characteristic=characteristic;
     }
 
     public Check() {
@@ -12,7 +10,7 @@ public class Check extends Activity {
 
     @Override
     protected String createMainPart() {
-        return "убедился";
+        return "осмотрел";
     }
 
     @Override

@@ -3,8 +3,6 @@ package lab.activity;
 public class Covered extends Activity {
     public Covered(String objectName, String characteristic){
         super(objectName,characteristic);
-       // this.objectName =objectName;
-     //   this.characteristic=characteristic;
     }
 
     public Covered() {
@@ -13,7 +11,7 @@ public class Covered extends Activity {
 
     @Override
     protected String createMainPart() {
-        return "покрыт ";
+        return "покрыт";
     }
 
     @Override

@@ -14,7 +14,7 @@ public abstract class Activity {
 
     //template method
     public String execute() {
-        return getCharacteristic() + " " + getObjectName() + " " + createMainPart();
+        return createMainPart() + " " + getCharacteristic() + " " + getObjectName();
     }
 
     protected abstract String createMainPart();

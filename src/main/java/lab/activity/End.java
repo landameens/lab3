@@ -3,8 +3,6 @@ package lab.activity;
 public class End extends Activity {
     public End(String objectName, String characteristic){
         super(objectName,characteristic);
-       // this.objectName =objectName;
-        //this.characteristic=characteristic;
     }
 
     public End() {

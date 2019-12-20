@@ -3,8 +3,6 @@ package lab.activity;
 public class Lick extends Activity {
     public Lick(String objectName, String characteristic){
         super(objectName,characteristic);
-       // this.objectName=objectName;
-        //this.characteristic=characteristic;
     }
 
     public Lick() {

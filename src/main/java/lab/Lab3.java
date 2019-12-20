@@ -17,19 +17,22 @@ public class Lab3 {
         Thing1 pocket = new Thing1("карманы ", "курточки ");
         Thing1 hill = new Thing1("холмами ", "поросшими зеленой травкой и мелким кустарником ");
         Ponchik ponchik = new Ponchik("Пончик");
-        Covered covered = new Covered(stone.getNAME(), "");
         City city = new City("Лос-Паганос");
 
         Drag drag = new Drag(sea.getNAME(), "полосой вдоль");
         Limited limited = new Limited(hill.getNAME(), "с противополложной стороны ");
+        Covered covered = new Covered(stone.getNAME(), "");
+        Check check = new Check(stone.getNAME(), "внримательно");
+        Lick lick = new Lick(stone.getNAME(), "");
+        Ensure ensure = new Ensure(cristall.getNAME(), "что это");
+        Chose chose = new Chose(cristall.getNAME(), "пару");
+
+
 
         Coast coast = new Coast(drag, limited, covered);
 
 
-        System.out.println(coast.doActivity(drag.getActivityName()));
-        //System.out.println(coast.doActivity(covered.getActivityName()));
-        //System.out.println(ponchik.doActivity(new Check(stone.getNAME(), "внимательно")));
-        //System.out.println(ponchik.doActivity("Pound"));
+        System.out.println(coast.doActivity(drag.getActivityName())+coast.doActivity(covered.getActivityName()));
 
 //        description.GetDescribe() + coast.getName() + coast.doActivity(drag.getName(), new Sea()) + coast.doActivity("Limited", hill)
 //                + " c " + plant.GetDescribe() + ". " + coast.getName() + " был " + coast.doActivity("Covered", stone) + stone.Similar() + ". " +

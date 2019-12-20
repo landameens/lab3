@@ -30,7 +30,7 @@ public abstract class Subject{
     public String doActivity(String activityName) {
         for (Activity activity : activities) {
             if (activity.getActivityName().equals(activityName)) {
-                return getName() + activity.execute();
+                return activity.execute();
             }
         }
         return null;

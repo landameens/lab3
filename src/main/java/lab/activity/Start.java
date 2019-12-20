@@ -3,8 +3,6 @@ package lab.activity;
 public class Start extends Activity {
     public Start(String objectName, String characteristic){
         super(objectName,characteristic);
-    //    this.objectName=objectName;
-      //  this.characteristic=characteristic;
     }
 
     public Start() {
