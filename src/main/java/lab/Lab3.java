@@ -49,5 +49,10 @@ public class Lab3 {
         Coast coast = new Coast(drag, limited, covered);
         Dives dives = new Dives("Богачи", come, party);
         Street street = new Street(drag);
+
+        Clasz clasz = new Clasz();
+        Clasz.InnerN innerN = clasz.new InnerN();
+        Clasz.InnerS innerS = new Clasz.InnerS();
+        clasz.Loose();
     }
 }
