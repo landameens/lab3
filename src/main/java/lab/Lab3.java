@@ -5,6 +5,7 @@ import lab.subject.*;
 
 public class Lab3 {
 
+
     public static void main(String[] args) {
 
         Thing1 cristall = new Thing1("кристаллы ", "обыкновенной поваренной соли ");
