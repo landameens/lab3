@@ -5,10 +5,6 @@ public class Covered extends Activity {
         super(objectName,characteristic);
     }
 
-    public Covered() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "покрыт";

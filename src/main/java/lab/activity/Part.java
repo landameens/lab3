@@ -5,10 +5,6 @@ public class Part extends Activity {
         super(objectName,characteristic);
     }
 
-    public Part() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "не привык расставаться ";

@@ -5,10 +5,6 @@ public class Ensure extends Activity {
         super(objectName,characteristic);
     }
 
-    public Ensure() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "убедился ";

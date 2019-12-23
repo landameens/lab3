@@ -2,7 +2,6 @@ package lab;
 
 import lab.activity.*;
 import lab.subject.*;
-import lab.things.thingss1.Thing1;
 
 public class Lab3 {
 
@@ -11,12 +10,13 @@ public class Lab3 {
         Thing1 cristall = new Thing1("кристаллы ", "обыкновенной поваренной соли ");
         Thing1 salt = new Thing1("соль ", "мелкая столовая");
         Thing1 sea = new Thing1("море ", "");
-        Thing1 stone = new Thing1("камни ","похожие на осколки глыб ");
-        Thing1 parashut = new Thing1("парашют ","");
+        Thing1 stone = new Thing1("камни ", "похожие на осколки глыб ");
+        Thing1 parashut = new Thing1("парашют ", "");
         Thing1 allThing = new Thing1("то ", "что попадается в руки ");
         Thing1 pocket = new Thing1("карманы ", "курточки ");
+        Thing1 clothes = new Thing1("одежда ", "");
         Thing1 hill = new Thing1("холмами ", "поросшими зеленой травкой и мелким кустарником ");
-        Ponchik ponchik = new Ponchik("Пончик");
+
         City city = new City("Лос-Паганос");
 
         Drag drag = new Drag(sea.getNAME(), "полосой вдоль");
@@ -26,44 +26,27 @@ public class Lab3 {
         Lick lick = new Lick(stone.getNAME(), "");
         Ensure ensure = new Ensure(cristall.getNAME(), "что это");
         Chose chose = new Chose(cristall.getNAME(), "пару");
+        Put put = new Put(cristall.getNAME(), "между ними");
+        Pound pound = new Pound(cristall.getNAME(), "");
+        Start start = new Start(pound.getActivityName(), "");
+        End end = new End(salt.getNAME(), "в результате");
+        Part part = new Part(allThing.getNAME(), "");
+        Fill fill = new Fill(salt.getNAME(), pocket.getNAME());
+        Ensure ensureClothes = new Ensure(clothes.getNAME(), "что просохла");
+        PutOn putOn = new PutOn("", "");
+        Go go = new Go(hill.getNAME(), "вдоль");
+        See see = new See(city.getName(), "который");
+        Parashute parashute = new Parashute(parashut.getNAME(), "когда");
+        Form form = new Form(sea.getNAME(), "залив");
+        Placed placed = new Placed(city.getName(), "");
+        Come come = new Come(city.getName(), "в");
+        Party party = new Party(city.getName(), "в");
 
-
-
+        Ponchik ponchik = new Ponchik("Пончик", pound, fill, putOn, see,
+                parashute, go, part, check, lick,
+                ensure, chose, put, start, end);
         Coast coast = new Coast(drag, limited, covered);
-
-
-        System.out.println(coast.doActivity(drag.getActivityName())+coast.doActivity(covered.getActivityName()));
-
-//        description.GetDescribe() + coast.getName() + coast.doActivity(drag.getName(), new Sea()) + coast.doActivity("Limited", hill)
-//                + " c " + plant.GetDescribe() + ". " + coast.getName() + " был " + coast.doActivity("Covered", stone) + stone.Similar() + ". " +
-//                ponchik.getName() + ponchik.doActivity("Check", stone) + " и " + ponchik.doActivity("Lick", stone) +
-//                ponchik.doActivity("Ensure", cristall) + describe.GetDescribe() + ". " + ponchik.doActivity("Chose", cristall) +
-//                ponchik.doActivity("Put", cristall) + ponchik.doActivity("Start", cristall) + ponchik.doActivity("End", salt) +
-//                View.GetDescribe()+". "+ ponchik.getName()+" " + ponchik.doActivity("Pound", new Salt()) + " побольше и "+
-//                ponchik.doActivity("Fill", new Jacket.Pocket()) + ". " + "Он " + ponchik.doActivity("PutOn", new Jacket())+
-//                " и " + ponchik.doActivity("Go", hill) + " города, который он " + ponchik.doActivity("See", null) +
-//                " , когда " + ponchik.doActivity("Parashute", new Parashut()) + "е. "
-//                +sea.getName() + sea.Form() + ", на "+ coast.getName() + " у которого расположился город." +
-//                " Это был " + city.getName() + ", в который " + dives.doActivity("Come", null) + " " + dives.getName()
-//                + " из других городов, так как здесь был " + city.Description() + dives.doActivity("Party", city)+". "+
-//                StreetDescription.GetDescribe()+street.getName()+street.doActivity("Drag", coast);
-
-
-//        Drag drag = new Drag();
-//        Coast coast = new Coast();
-//        Hill hill = new Hill();
-//        Coast.Description description = coast.new Description();
-//        Hill.Plant plant = new Hill.Plant();
-//        Stone stone=new Stone();
-//        Cristall cristall = new Cristall();
-//        Cristall.Describe describe = cristall.new Describe();
-//        Salt salt = new Salt();
-//        Salt.Describe View = salt.new Describe();
-//        Sea sea = new Sea();
-//        City city = new City("Лос-Паганос");
-//
-//        Dives dives = new Dives("Богачи");
-//        Street street = new Street();
-//        Street.Description StreetDescription = street.new Description();
+        Dives dives = new Dives("Богачи", come, party);
+        Street street = new Street(drag);
     }
 }

@@ -5,10 +5,6 @@ public class Put extends Activity {
         super(objectName,characteristic);
     }
 
-    public Put() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "положил ";

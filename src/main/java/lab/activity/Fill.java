@@ -5,10 +5,6 @@ public class Fill extends Activity {
         super(objectName,characteristic);
     }
 
-    public Fill() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "набил ";

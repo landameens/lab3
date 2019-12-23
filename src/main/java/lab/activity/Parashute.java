@@ -5,9 +5,6 @@ public class Parashute extends Activity {
         super(objectName,characteristic);
     }
 
-    public Parashute() {
-    }
-
     @Override
     protected String createMainPart() {
         return "спускался ";

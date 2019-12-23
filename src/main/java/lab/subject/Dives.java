@@ -5,10 +5,10 @@ import lab.activity.Party;
 
 public class Dives extends Subject {
 
-    public Dives(String name) {
+    public Dives(String name, Come come, Party party) {
         super(name);
-        addActivity(new Come());
-        addActivity(new Party());
+        addActivity(come);
+        addActivity(party);
     }
 
 }

@@ -5,10 +5,6 @@ public class Come extends Activity {
         super(objectName,characteristic);
     }
 
-    public Come() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "съезжались ";

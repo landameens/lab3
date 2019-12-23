@@ -5,10 +5,6 @@ public class Party extends Activity {
         super(objectName,characteristic);
     }
 
-    public Party() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "повеселиться ";

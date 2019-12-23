@@ -5,10 +5,6 @@ public class Chose extends Activity {
         super(objectName,characteristic);
     }
 
-    public Chose() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "выбрал";

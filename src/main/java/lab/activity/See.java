@@ -5,10 +5,6 @@ public class See extends Activity {
         super(objectName,characteristic);
     }
 
-    public See() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "видел ";

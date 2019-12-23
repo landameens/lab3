@@ -5,10 +5,6 @@ public class PutOn extends Activity {
         super(objectName,characteristic);
     }
 
-    public PutOn() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "оделся ";

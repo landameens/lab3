@@ -5,10 +5,6 @@ public class Go extends Activity {
         super(objectName,characteristic);
     }
 
-    public Go() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "зашагал ";

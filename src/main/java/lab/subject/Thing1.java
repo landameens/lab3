@@ -1,4 +1,4 @@
-package lab.things.thingss1;
+package lab.subject;
 
 public class Thing1 {
     private final String NAME;

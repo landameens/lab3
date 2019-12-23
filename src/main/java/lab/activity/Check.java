@@ -5,9 +5,6 @@ public class Check extends Activity {
         super(objectName,characteristic);
     }
 
-    public Check() {
-    }
-
     @Override
     protected String createMainPart() {
         return "осмотрел";

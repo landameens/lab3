@@ -5,10 +5,6 @@ public class Start extends Activity {
         super(objectName,characteristic);
     }
 
-    public Start() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "принялся ";

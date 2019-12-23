@@ -6,7 +6,6 @@ public class Drag extends Activity {
         super(objectName,characteristic);
     }
 
-
     @Override
     protected String createMainPart() {
         return "тянулся ";

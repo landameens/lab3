@@ -5,10 +5,6 @@ public class Limited extends Activity {
         super(objectName,characteristic);
     }
 
-    public Limited() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "ограничен ";

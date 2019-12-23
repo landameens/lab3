@@ -1,8 +1,6 @@
 package lab.subject;
 
-import lab.things.NotLiveSubject;
-
-public class City extends NotLiveSubject {
+public class City extends Subject {
     private String name;
 
     public City(String name){

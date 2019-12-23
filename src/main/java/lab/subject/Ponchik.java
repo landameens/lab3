@@ -4,22 +4,24 @@ import lab.activity.*;
 
 public class Ponchik extends Subject {
 
-    public Ponchik(String name) {
+    public Ponchik(String name, Pound pound, Fill fill, PutOn putOn, See see,
+                   Parashute parashute, Go go, Part part, Check check, Lick lick,
+                   Ensure ensure, Chose chose, Put put, Start start, End end) {
         super(name);
-        addActivity(new Pound());
-        addActivity(new Fill());
-        addActivity(new PutOn());
-        addActivity(new See());
-        addActivity(new Parashute());
-        addActivity(new Go());
-        addActivity(new Part());
-        addActivity(new Check());
-        addActivity(new Lick());
-        addActivity(new Ensure());
-        addActivity(new Chose());
-        addActivity(new Put());
-        addActivity(new Start());
-        addActivity(new End());
+        addActivity(pound);
+        addActivity(fill);
+        addActivity(putOn);
+        addActivity(see);
+        addActivity(parashute);
+        addActivity(go);
+        addActivity(part);
+        addActivity(check);
+        addActivity(lick);
+        addActivity(ensure);
+        addActivity(chose);
+        addActivity(put);
+        addActivity(start);
+        addActivity(end);
     }
 
 

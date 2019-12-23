@@ -5,10 +5,6 @@ public class End extends Activity {
         super(objectName,characteristic);
     }
 
-    public End() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "получилась ";

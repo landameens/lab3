@@ -5,9 +5,6 @@ public class Pound extends Activity {
         super(objectName,characteristic);
     }
 
-    public Pound() {
-    }
-
     @Override
     protected String createMainPart() {
         return "толочь ";

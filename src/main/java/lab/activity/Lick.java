@@ -5,10 +5,6 @@ public class Lick extends Activity {
         super(objectName,characteristic);
     }
 
-    public Lick() {
-
-    }
-
     @Override
     protected String createMainPart() {
         return "полизав ";
